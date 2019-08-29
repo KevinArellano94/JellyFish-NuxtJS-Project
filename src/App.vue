@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <h3>Welcome to Netlify Identity Demo in Vue.js</h3>
+    <h3>JellyFish NuxtJS Application</h3>
+
     <div v-if="isLoggedIn">
       <p>Hello {{ username }}</p>
       <p>
@@ -15,6 +16,7 @@
         <button @click="triggerNetlifyIdentityAction('signup')">Sign Up</button>
       </p>
     </div>
+    
     <ul>
       <li>
         <router-link :to="{name:'Home'}">Home Page</router-link>
